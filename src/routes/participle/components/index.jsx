@@ -13,6 +13,7 @@ import _ from 'lodash';
 import { submitInfo, refreshInfo } from './../webAPI/index';
 import { Row, Col, Button, Checkbox, Icon, Form, Input } from 'antd';
 
+//表单功能
 const CustomizedForm = Form.create({
     name: 'global_state',
     onFieldsChange(props, changedFields) {
