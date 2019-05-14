@@ -1,0 +1,104 @@
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  height: 0;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+  padding: 50px 150px 0;
+  .item {
+    & > .ant-row,
+    & > .original-content > .ant-row{
+      border: 1px solid #ccc;
+      padding: 10px 0 10px 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .participle-content {
+      .participle-btns {
+        & > button {
+          margin-left: 10px;
+          height: 24px;
+          float: right;
+          line-height: 1.0;
+        }
+      }
+      .participle-btn-remark {
+        margin-top: 10px;
+        & > div {
+          padding-left: 10px;
+          border: 1px solid #ccc;
+        }
+      }
+    }
+    .segment-content {
+      .segment-word {
+        border: 1px solid #666;
+        padding: 10px 10px 20px;
+        & > div {
+          float: left;
+          span {
+            background-color: #f2f2f2;
+            padding: 5px 10px;
+          }
+          i {
+            cursor: pointer;
+            color: #fff;
+            border-radius: 5px;
+            background-color: #f00;
+            font-size: 16px;
+          }
+        }
+      }
+      .segment-btn {
+        margin-top: 10px;
+        width: 100%;
+        & > button {
+          float: right;
+          height: 24px;
+          line-height: 1.0;
+        }
+      }
+    }
+
+    .manually-add-content {
+      & > .ant-col {
+        height: 36px;
+        line-height: 36px;
+      }
+      & > .manually-add-input {
+        & > .ant-input-affix-wrapper {
+          width: 80%;
+        }
+      }
+
+      & > .manually-add-btn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        & > button {
+          height: 24px;
+          line-height: 1.0;
+        }
+        & > button:nth-child(1){
+          margin-right: 20px;
+        }
+
+      }
+    }
+
+    .submit-fresh-btn {
+      float: right;
+      & > button {
+        margin-right: 10px;
+        height: 24px;
+        line-height: 1.0;
+      }
+      & > button:nth-last-child(1){
+        margin-right: 0;
+      }
+    }
+  }
+}
